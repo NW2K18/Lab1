@@ -42,7 +42,21 @@ public class TodoActivity extends AppCompatActivity {
         buttonNext.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
+
+                /*
+                BUG!
+                Compile time error: mTodoIndexx is misspelled
+                Runtime Error: no check for maximum number of items in the todos array
+
+                // Bug fix compile error, Correct spelling mTodoIndex and not mTodoIndexx
+                // Bug fix run time error, use the remainder as index to the array, i.e.
+                //      mTodoIndex = (mTodoIndex + 1) % todos.length;
+                */
+
                 mTodoIndex += 1;
+                //if (mTodoIndex == 5) { // Checks if Index exceeds array
+                //    mTodoIndex = 0;
+                //}
                 TodoTextView.setText(mTodos[mTodoIndex]);
             }
         });
