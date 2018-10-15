@@ -8,8 +8,12 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
+import android.util.Log;
 
 public class TodoActivity extends AppCompatActivity {
+
+    // Debugging string
+    public static final String TAG = "TodoActivity";
 
     private String[] mTodos;
     private int mTodoIndex = 0;
@@ -41,6 +45,7 @@ public class TodoActivity extends AppCompatActivity {
         // call the super class onCreate to complete the creation of activity like
         // the view hierarchy
         super.onCreate(savedInstanceState);
+        Log.d(TAG, " *** Just to say the PC is in onCreate!");
 
         // set the user interface layout for this Activity
         // the layout file is defined in the project res/layout/activity_todo.xml file
