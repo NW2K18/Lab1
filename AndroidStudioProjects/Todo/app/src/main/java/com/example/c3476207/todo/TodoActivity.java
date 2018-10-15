@@ -53,7 +53,7 @@ public class TodoActivity extends AppCompatActivity {
                 //      mTodoIndex = (mTodoIndex + 1) % todos.length;
                 */
 
-                mTodoIndex += 1;
+                mTodoIndex = (mTodoIndex + 1) % mTodos.length;
                 //if (mTodoIndex == 5) { // Checks if Index exceeds array
                 //    mTodoIndex = 0;
                 //}
