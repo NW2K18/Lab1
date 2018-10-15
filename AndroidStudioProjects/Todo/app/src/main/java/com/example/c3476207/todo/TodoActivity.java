@@ -18,6 +18,9 @@ public class TodoActivity extends AppCompatActivity {
     private String[] mTodos;
     private int mTodoIndex = 0;
 
+    // Debugging String
+    public static final String TAG = "TodoActivity";
+
     // In case of state change, due to rotating the phone
     // store the mTodoIndex to display the same mTodos element post state change
     // N.B. small amounts of data, typically IDs can be stored as key, value pairs in a Bundle
