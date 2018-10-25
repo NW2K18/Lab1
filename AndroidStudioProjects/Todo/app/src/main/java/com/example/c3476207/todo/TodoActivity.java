@@ -19,7 +19,7 @@ public class TodoActivity extends AppCompatActivity {
     private int mTodoIndex = 0;
 
     // Debugging String
-    public static final String TAG = "TodoActivity";
+    // public static final String TAG = "TodoActivity";
 
     // In case of state change, due to rotating the phone
     // store the mTodoIndex to display the same mTodos element post state change
